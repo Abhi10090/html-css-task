@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Montserrat:wght@400;700&family=Dancing+Script:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
 * {
     margin: 0;
     padding: 0;
@@ -31,10 +35,61 @@
         margin: 0;
     }
 }
+/* Global Styles */
+body {
+    font-family: 'Lora', serif;
+    background-color: #f8f8f8; /* Light background for better contrast */
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+/* Headings */
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 700; /* Bold for prominence */
+    color: #2c3e50; /* Darker color for emphasis */
+}
+
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.75rem;
+    font-weight: 400;
+    color: #34495e; /* Slightly lighter shade */
+}
+h4 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.23rem;
+    font-weight: 500;
+    color: #293a4a;
+}
+.font-style{
+    font-family: 'Julius Sans One', sans-serif;
+    color: white;
+}
+
+
+/* Playful Text */
+h3 {
+    font-family: emoji;
+    /* font-size: 1.5rem; */
+    color: #4e4949;
+}
+.innertext {
+    font-family: emoji;
+    /* font-size: 1.5rem; */
+    color: white;
+}
+
+p {
+    font-size: 1rem;
+    line-height: 1.6; /* Better readability */
+}
+
 
 body {
-    font-family: Arial, sans-serif;
-    background-color: white;
+    /* font-family:  Arial, sans-serif; */
+    /* background-color: white; */
     color: #333;
     margin: 0;
     padding: 0rem; /* Adding padding for some space */
@@ -63,6 +118,8 @@ p {
 
 
 .navbar {
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Playfair Display', serif;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -150,13 +207,20 @@ p {
     padding: 50px 20px;
     color: black;
 }
-
 .hero h1 {
-
-    font-size: 2.5rem;
-    margin-top: 30vh;
-    margin-bottom: 4vh;
+    font-family: 'Montserrat', sans-serif; /* Added fallback */
+    font-size: 3rem;
+    margin-top: 38vh;
+    margin-bottom: 5vh;
     color: white;
+}
+
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 1.9rem; /* Adjust font size for smaller screens */
+        margin-top: 15rem; /* Reduce top margin for better spacing */
+        margin-bottom: 3vh; /* Adjust bottom margin */
+    }
 }
 
 .hero button {
@@ -277,10 +341,24 @@ h2 {
 }
 
 .products-grid {
+    gap: 0.5rem;
+    margin-left: -4rem;
+    margin-right: 4rem;
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
 }
+
+@media (max-width: 768px) {
+    .products-grid {
+        width: 20rem;
+        gap: 1rem; /* Increase gap for better spacing on mobile */
+        margin-left: 0; /* Reset left margin */
+        margin-right: 0; /* Reset right margin */
+        justify-content: center; /* Center items on smaller screens */
+    }
+}
+
 
 .product {
     width: 12rem;
@@ -288,10 +366,17 @@ h2 {
 }
 
 .product img {
-    width: auto;
-    height: auto;
+    width: 20rem;
+    height: 20rem;
     border-radius: 10px;
 }
+
+@media (max-width: 768px) { /* Adjust the max-width as needed */
+    .product img {
+        width: 12rem;
+    }
+}
+
 
 .product h3 {
     font-size: 1.2rem;
@@ -299,10 +384,23 @@ h2 {
 }
 
 .product p {
+    width: 17rem;
+    margin-left: 0rem;
+    margin-top: 0rem;
     font-size: 0.9rem;
     color: #777;
-    font-weight: 400;
+    font-weight: 600;
 }
+
+
+@media (max-width: 768px) {
+    .product p {
+        width: 100%; /* Full width on mobile */
+        font-size: 0.8rem; /* Adjust font size if needed */
+        margin: 0; /* Reset margins for consistency */
+    }
+}
+
 
 .font-button {
     text-align: left;
@@ -396,7 +494,7 @@ h2 {
 
 .left-section .image {
     margin-top: 0.5rem;
-    width: 95%;
+    width: 97%;
     height: auto;
     border-radius: 10px;
 }
@@ -416,8 +514,24 @@ h1 {
 }
 
 h2 {
-    font-size: 18px;
+    font-family: 'Roboto', sans-serif; /* Apply the font globally */
+    font-size: 28px;
     color:black;
+    font-weight: 510;
+    font-style: italic;
+}
+@media (max-width: 768px) {
+    h2 {
+        font-size: 2rem;              /* Smaller size for medium screens */
+    }
+}
+
+/* Small screens */
+@media (max-width: 480px) {
+    h2 {
+        font-size: 1.1rem;            /* Even smaller for small screens */
+        margin: 0.5rem 0;             /* Adjust margin for smaller devices */
+    }
 }
 
 p {
