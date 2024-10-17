@@ -138,6 +138,7 @@ p {
 }
 
 .navbar .nav-links {
+    text-align: center;
     list-style: none;
     margin: 0;
     padding: 0;
@@ -148,11 +149,13 @@ p {
 }
 
 .navbar .nav-links a {
+    /* margin-left: 3rem; */
     color: black;
     text-decoration: none;
     font-size: 1rem;
     padding: 8px;
 }
+
 
 .navbar .nav-links a:hover {
     /* border:1px solid #555; */
@@ -209,7 +212,7 @@ p {
 }
 .hero h1 {
     font-family: 'Montserrat', sans-serif; /* Added fallback */
-    font-size: 3rem;
+    font-size: 2.5rem;
     margin-top: 38vh;
     margin-bottom: 5vh;
     color: white;
@@ -361,7 +364,7 @@ h2 {
 
 
 .product {
-    width: 12rem;
+    width: 10rem;
     margin-bottom: 3rem;
 }
 
@@ -371,9 +374,11 @@ h2 {
     border-radius: 10px;
 }
 
-@media (max-width: 768px) { /* Adjust the max-width as needed */
+@media (max-width: 768px) {
     .product img {
-        width: 12rem;
+        margin: 20px 2px 4px -62px;
+        width: 20rem;
+        height: 20rem;
     }
 }
 
@@ -395,12 +400,12 @@ h2 {
 
 @media (max-width: 768px) {
     .product p {
-        width: 100%; /* Full width on mobile */
-        font-size: 0.8rem; /* Adjust font size if needed */
-        margin: 0; /* Reset margins for consistency */
+        margin-top: -23rem;
+        width: 16rem;
+        font-size: 0.8rem;
+        margin:13px -5px 3px -34px;;
     }
 }
-
 
 .font-button {
     text-align: left;
@@ -467,6 +472,7 @@ h2 {
     justify-content: center;
 
 }
+
 
 .gift-him {
     background-color: red;
